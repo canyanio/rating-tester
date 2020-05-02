@@ -12,6 +12,5 @@ FROM alpine:3.10
 RUN apk update && apk upgrade && \
         apk add --no-cache ca-certificates xz
 RUN mkdir -p /etc/rating-tester
-COPY ./config.yaml /etc/rating-tester
 COPY --from=builder /go/src/github.com/canyanio/rating-tester/rating-tester /usr/bin
 ENTRYPOINT ["/usr/bin/rating-tester"]
