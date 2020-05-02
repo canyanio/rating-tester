@@ -1,0 +1,78 @@
+# Agent listen address (UDP)
+# Defauls to: ":9060" which will listen on all avalable interfaces.
+# Set to empty string to disable UDP
+# Overwrite with environment variable: RATING_AGENT_HEP_LISTEN_UDP
+
+# listen_udp: :9060
+
+
+# Agent listen address (TCP)
+# Defauls to: ":9060" which will listen on all avalable interfaces.
+# Set to empty string to disable TCP
+# Overwrite with environment variable: RATING_AGENT_HEP_LISTEN_TCP
+
+# listen_tcp: :9060
+
+
+# Message bus URI
+# Defauls to: "amqp://user:password@localhost:5672//"
+# Overwrite with environment variable: RATING_AGENT_HEP_MESSAGE_BUS_URI
+
+# message_bus_uri: amqp://user:password@localhost:5672//
+
+
+# State manager
+# Defauls to: "memory"
+# Possible values: "memory", "redis"
+# Overwrite with environment variable: RATING_AGENT_HEP_STATE_MANAGER
+
+# state_manager: memory
+
+
+# Redis address
+# Defauls to: "localhost:6379"
+# Overwrite with environment variable: RATING_AGENT_HEP_REDIS_ADDRESS
+
+# redis_address: localhost:6379
+
+
+# Redis password
+# Defauls to: "" which disables the password authentication
+# Overwrite with environment variable: RATING_AGENT_HEP_REDIS_PASSWORD
+
+# redis_password: ""
+
+
+# Redis database number
+# Defauls to: 0
+# Overwrite with environment variable: RATING_AGENT_HEP_REDIS_DB
+
+# redis_db: 0
+
+
+# Tenant
+# Defauls to: "default" which is the default for the community edition
+# Overwrite with environment variable: RATING_AGENT_HEP_TENANT
+
+# tenant: default
+
+
+# SIP Header Caller
+# Defauls to: "" which disables the SIP caller identification from headers
+# Overwrite with environment variable: RATING_AGENT_HEP_SIP_HEADER_CALLER
+
+# sip_header_caller: ""
+
+
+# SIP Header Callee
+# Defauls to: "" which disables the SIP callee identification from headers
+# Overwrite with environment variable: RATING_AGENT_HEP_SIP_HEADER_CALLEE
+
+# sip_header_callee: ""
+
+
+# SIP local domains
+# Defauls to: [] which disables the identification of accounts based on domain
+# Overwrite with environment variable: RATING_AGENT_HEP_SIP_LOCAL_DOMAINS
+
+# sip_local_domains: []
